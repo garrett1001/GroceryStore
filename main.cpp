@@ -9,6 +9,7 @@ int main()
   int numItems = 0;
   char input = 0;
   int i = 0;
+  string item;
 
 while(i<1)
 {
@@ -21,10 +22,12 @@ while(i<1)
 
   if(input=='A' || input=='a')
   {
+   cout<<"What is the item?"<<endl;
+   cin>>item;
+
     if(numItems<5)
     {
-     cout<<"What is the item?"<<endl;
-     cin>>list[numItems];
+     list[numItems] = item;
      numItems++;
     }
 
