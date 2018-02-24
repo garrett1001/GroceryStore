@@ -8,6 +8,7 @@ int main()
   string list[5]; //array of 5 strings
   int numItems = 0;
   char input = 0;
+  int i = 0;
 
 while(i<1)
 {
@@ -20,6 +21,17 @@ while(i<1)
 
   if(input=='A' || input=='a')
   {
+    if(numItems<5)
+    {
+     cout<<"What is the item?"<<endl;
+     cin>>list[numItems];
+     numItems++;
+    }
+
+    else
+    {
+     cout<<"You'll need a bigger list!"<<endl;
+    }
   }
 
   else if(input=='Q' || input=='q')
@@ -29,6 +41,7 @@ while(i<1)
 
   else
   {
+  cout<<"Invalid selection"<<endl;
   }
 }
 
